@@ -96,12 +96,15 @@ public class storeBookProduct implements storeBookDao {
             switch (chon){
                 case 1:
                     storeBookProduct.add(storeBook);
+                    menu();
                     break;
                 case 2:
                     storeBookProduct.insert(storeBook);
+                    menu();
                     break;
                 case 3:
                     storeBookProduct.getAll();
+                    menu();
                     break;
                 case 4:
                     storeBookProduct.getMssql().close();
